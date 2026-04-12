@@ -1,0 +1,160 @@
+.dashboard-wrapper {
+  background-color: #0a0f18; /* Matches your login theme */
+  min-height: 100vh;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  color: #8892b0;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Form on left, table on right */
+  gap: 25px;
+}
+
+@media (max-width: 968px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styling */
+.dashboard-card {
+  background: #112240;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  border: 1px solid #233554;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: #ccd6f6;
+  margin-bottom: 6px;
+}
+
+.dashboard-card input {
+  background: #0a192f;
+  border: 1px solid #233554;
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.dashboard-card input:focus {
+  border-color: #64ffda;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #10b981;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.project-table th {
+  padding: 15px;
+  border-bottom: 1px solid #233554;
+  color: #8892b0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.project-table td {
+  padding: 15px;
+  border-bottom: 1px solid #1d2d47;
+}
+
+.project-table .bold {
+  font-weight: 600;
+  color: #64ffda;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.verified {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.status-badge.created, .status-badge.pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 40px !important;
+  color: #8892b0;
+}

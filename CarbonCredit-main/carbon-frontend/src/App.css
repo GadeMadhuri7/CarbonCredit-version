@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(to right, #dbeafe, #f0fdf4);
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
